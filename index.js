@@ -1,7 +1,8 @@
-const fs = require('fs')
+const fs = require("fs");
+const path = require("path");
 
 async function getRandomFiveLetterWord () {
-  let words = await fs.readFileSync("./words_dictionary.json", "utf8")
+  let words = fs.readFileSync(path.resolve(__dirname,  "words_dictionary.json"), "utf8")
   words = JSON.parse(words)
   words = Object.keys(words)
   let fiveLetterWords = words.filter(word => word.length === 5)
@@ -9,8 +10,12 @@ async function getRandomFiveLetterWord () {
   let length = fiveLetterWords.length
   let randomFiveWord = fiveLetterWords[Math.floor(Math.random()*length)]
   return randomFiveWord
+};
 
+const asyncFunc = async()=> {
+  const result = await getRandomFiveLetterWord()
+  console.log(result)
 }
-
+asyncFunc()
 
 module.exports = { getFiveLetterWord: getRandomFiveLetterWord }
