@@ -7,12 +7,12 @@ function getRandomFiveLetterWord () {
     words = JSON.parse(jsonString)
     words = Object.keys(words)
     let fiveLetterWords = words.filter(word => word.length === 5)
-    console.log(fiveLetterWords)
+    // console.log(fiveLetterWords)
     let length = fiveLetterWords.length
     let randomFiveWord = fiveLetterWords[Math.floor(Math.random()*length)]
     return randomFiveWord
   })
 }
 
-module.exports({ getFiveLetterWord })
+module.exports = { getFiveLetterWord: getRandomFiveLetterWord }
 
