@@ -1,0 +1,23 @@
+{
+  "name": "five-letter-word",
+  "version": "1.0.0",
+  "description": "Get yourself a random five letter word",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSinkler713/five-letter-word.git"
+  },
+  "keywords": [
+    "five",
+    "letter"
+  ],
+  "author": "JSinkler713",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JSinkler713/five-letter-word/issues"
+  },
+  "homepage": "https://github.com/JSinkler713/five-letter-word#readme"
+}
