@@ -1,6 +1,6 @@
 {
   "name": "@jsinkler713/five-letter-word",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get yourself a random five letter word",
   "main": "index.js",
   "scripts": {
