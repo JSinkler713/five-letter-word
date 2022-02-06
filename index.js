@@ -1,3 +1,3 @@
 import { getFiveLetterWord } from './utils/FiveLetterWordFile.js'
 
-module.exports = { getFiveLetterWord }
+module.exports({ getFiveLetterWord })
