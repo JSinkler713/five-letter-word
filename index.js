@@ -11,5 +11,5 @@ function getRandomFiveLetterWord () {
   return randomFiveWord
 };
 
-
 module.exports = { getFiveLetterWord: getRandomFiveLetterWord }
+
